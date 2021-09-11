@@ -16,7 +16,7 @@ html {
   --background-color: #f5f4fa;
 }
 .section {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   outline: 1px solid red;
   padding-left: 15px;
@@ -112,14 +112,17 @@ section {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   padding: 10px 32px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-color: transparent;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 /* Advantages */
 .advantage-title {
   display: none;
@@ -177,6 +180,15 @@ section {
 .filter {
   color: var(--title-color);
   background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  padding: 6px 22px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  margin-right: 8px;
 }
 .filter :hover,
 .filter :focus {
@@ -195,7 +207,15 @@ section {
   font-size: 16px;
   line-height: 1.9;
 }
-
+.card-list {
+  margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card-list > li > p {
+  margin-bottom: 0;
+}
 /* FOOTER */
 .logo-footer {
   color: var(--accent-white);
