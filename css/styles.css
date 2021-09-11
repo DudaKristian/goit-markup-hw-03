@@ -1,3 +1,12 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 :root {
   --accent-color: #2196f3;
   --title-color: #212121;
@@ -5,6 +14,16 @@
   --accent-white: #ffffff;
   --logo-secondary-color: #000000;
   --background-color: #f5f4fa;
+}
+.section {
+  width: 1200px;
+  margin: 0 auto;
+  outline: 1px solid red;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+ul {
+  padding-left: 0;
 }
 li {
   list-style-type: none;
@@ -23,14 +42,19 @@ h2,
 h3 {
   color: var(--title-color);
 }
+section {
+  margin-bottom: 0;
+}
 /* HEADER */
 /* Logo */
+
 .logo-header {
   color: var(--logo-secondary-color);
   font-family: 'raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  margin-bottom: 0;
 }
 .logo-web {
   color: var(--accent-color);
@@ -43,12 +67,17 @@ h3 {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  margin-bottom: 0;
 }
 .navigation :focus,
 .navigation :hover,
 .contacts :hover,
 .contacts :focus {
   color: var(--accent-color);
+}
+.navigation > li,
+.contacts > li {
+  padding: 0;
 }
 .contacts a {
   color: var(--text-color);
@@ -57,16 +86,25 @@ h3 {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.contacts {
+  margin-bottom: 0;
+}
+
 /* HERO */
+.hero {
+  margin-top: 0;
+}
 .hero-title {
   color: var(--accent-white);
-  background-color: #2f303a;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30;
+  margin-top: 0;
+  background-color: #2f303a;
 }
 .button {
   color: var(--accent-white);
@@ -77,26 +115,63 @@ h3 {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  padding: 10px 32px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-color: transparent;
 }
 /* Advantages */
+.advantage-title {
+  display: none;
+}
+
+.section > ul {
+  margin-top: 0;
+}
 .advantage {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 0;
 }
+.advantage-list {
+  margin-bottom: 0;
+}
+
+.advantage-list > li > p {
+  margin-bottom: 0;
+}
+
 /* What do we do + team */
 .title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.work-list {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 94px;
+  margin-bottom: 0;
 }
 .teammember-name {
   color: var(--title-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+}
+.title.team {
+  padding-top: 94px;
+}
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
 }
 /* Portfolio buttons */
 .filter {
