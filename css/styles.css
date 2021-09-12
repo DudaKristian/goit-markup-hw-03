@@ -47,7 +47,10 @@ section {
 }
 /* HEADER */
 /* Logo */
-
+.nav {
+  display: flex;
+  align-items: center;
+}
 .logo-header {
   color: var(--logo-secondary-color);
   font-family: 'raleway', sans-serif;
@@ -55,6 +58,7 @@ section {
   font-size: 26px;
   line-height: 1.2;
   margin-bottom: 0;
+  margin-right: 93px;
 }
 .logo-web {
   color: var(--accent-color);
@@ -88,6 +92,11 @@ section {
   margin-right: 50px;
   outline: 1px solid tomato;
 }
+.navigation > li > a,
+.contacts > li > a {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .contacts a {
   color: var(--text-color);
   font-weight: 500;
@@ -96,8 +105,10 @@ section {
   letter-spacing: 0.02em;
 }
 .contacts {
-  margin-bottom: 0;
   display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
 }
 
 /* HERO */
@@ -195,6 +206,7 @@ section {
 }
 .filter > li {
   margin-right: 8px;
+  margin-top: 94px;
 }
 .btn {
   padding: 6px 22px;
