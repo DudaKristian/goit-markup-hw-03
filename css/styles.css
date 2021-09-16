@@ -161,11 +161,22 @@ section {
   margin-top: 0;
 }
 .advantage-list {
+  display: flex;
   margin-bottom: 0;
-}
 
+   /* justify-content: space-between; */
+  /* width: calc((100% - 90px) / 4); */ */
+}
+.advantage-text{
+  /* width: calc((100% - 90px) / 4); */
+  justify-content: space-between;
+  margin-right: 30px;
+}
+.advantage-text-last{
+margin-right: 0;
+}
 .advantage-list > li > p {
-  margin-bottom: 0;
+  margin-bottom: 94px;
 }
 
 /* What do we do + team */
@@ -177,11 +188,15 @@ section {
   margin-top: 0;
   margin-bottom: 50px;
 }
+.work {
+  margin-top: 0;
+}
 .work-list {
   display: flex;
   justify-content: space-between;
   padding-bottom: 94px;
   margin-bottom: 0;
+  
 }
 .teammember-name {
   color: var(--title-color);
