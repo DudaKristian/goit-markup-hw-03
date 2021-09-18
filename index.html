@@ -20,7 +20,7 @@
   <body>
     <!-- to do: Flex inline  -->
     <header>
-      <div class="section">
+      <div class="container">
         <nav class="nav">
           <a lang="en" class="logo-header" href="#"> <span class="logo-web">Web</span>Studio</a>
           <ul class="navigation">
@@ -38,7 +38,7 @@
     <main>
       <!--Hero-->
       <section class="hero">
-        <div class="section">
+        <div class="container">
           <h1 class="hero-title">
             Эффективные решения <br />
             для вашего бизнеса
@@ -48,7 +48,7 @@
       </section>
       <!--Переваги-->
       <section>
-        <div class="section">
+        <div class="container">
           <ul class="advantage-list">
             <h2 class="advantage-title">Почему мы?</h2>
             <li>
@@ -80,7 +80,7 @@
       </section>
       <!--Чем мы занимаемся-->
       <section>
-        <div class="section">
+        <div class="container">
           <h2 class="title work">Чем мы занимаемся</h2>
           <ul class="work-list">
             <li>
@@ -111,11 +111,11 @@
         </div>
       </section>
       <!--Наша команда-->
-      <section>
-        <div class="section">
+      <section class="team">
+        <div class="container">
           <h2 class="title team">Наша команда</h2>
           <ul class="team-list">
-            <li>
+            <li class="team-list-member">
               <img
                 src="./images/igor-demjanenko.jpg"
                 width="270"
@@ -125,7 +125,7 @@
               <h3 class="teammember-name">Игорь Демьяненко</h3>
               <p lang="en">Product Designer</p>
             </li>
-            <li>
+            <li class="team-list-member">
               <img
                 src="./images/olga-repina.jpg"
                 width="270"
@@ -135,7 +135,7 @@
               <h3 class="teammember-name">Ольга Репина</h3>
               <p lang="en">Frontend Developer</p>
             </li>
-            <li>
+            <li class="team-list-member">
               <img
                 src="./images/nikolaj-tarasov.jpg"
                 width="270"
@@ -145,7 +145,7 @@
               <h3 class="teammember-name">Hиколай Тарасов</h3>
               <p lang="en">Marketing</p>
             </li>
-            <li>
+            <li class="team-list-member">
               <img
                 src="./images/mihail-ermakov.jpg"
                 width="270"
@@ -159,14 +159,16 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="section">
+    <footer class="footer">
+      <div class="container">
         <address>
           <a class="logo-footer" href="#"><span class="logo-web">Web</span>Studio</a> <br />
+          <div class="footer-address">
           <span class="address"> г. Киев, пр-т Леси Украинки, 26 <br /></span>
           <div class="contacts-footer">
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a> <br />
-            <a href="tel:+380961111111">+38 096 111 11 11</a>
+            <span class="mail"><a href="mailto:info@devstudio.com">info@devstudio.com</a> <br /></span>
+            <span class="mail"><a href="tel:+380961111111">+38 096 111 11 11</a></span>
+          </div>
           </div>
         </address>
       </div>
